@@ -19,5 +19,7 @@ namespace G_NET68_EF_Assignment_2.models
         public string? CompanyName { get; set; }
 
         public bool IsVerified { get; set; }
+        public organizerprofile OrganizerProfile { get; set; }
+        public ICollection<Event> Events { get; set; }=new HashSet<Event>();
     }
 }
